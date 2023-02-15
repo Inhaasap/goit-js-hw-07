@@ -1,6 +1,8 @@
-// Створи галерею з можливістю кліку по її елементах і перегляду повнорозмірного зображення у модальному вікні.Подивися демо відео роботи галереї.
+// Створи галерею з можливістю кліку по її елементах і перегляду повнорозмірного зображення у модальному вікні.
+// Подивися демо відео роботи галереї.
   
-// Виконуй це завдання у файлах 01-gallery.html і 01-gallery.js. Розбий його на декілька підзавдань:
+// Виконуй це завдання у файлах 01-gallery.html і 01-gallery.js. 
+// Розбий його на декілька підзавдань:
 
 // Створення і рендер розмітки на підставі масиву даних galleryItems і наданого шаблону елемента галереї.
 // Реалізація делегування на div.gallery і отримання url великого зображення.
@@ -55,7 +57,7 @@ function createGalleryItemsMarkup(items) {
 function onImgClickCreateModal(event) {
   event.preventDefault();
 
-  const isItemImage = e.target.classList.contains("gallery__image");
+  const isItemImage = event.target.classList.contains("gallery__image");
   if (!isItemImage) {
     return;
   }
