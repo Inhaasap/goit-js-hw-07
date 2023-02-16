@@ -39,6 +39,8 @@ const itemsMarkup = createGalleryItemsMarkup(galleryItems);
 galleryContainer.insertAdjacentHTML('beforeend', itemsMarkup);
 galleryContainer.addEventListener('click', onImgClickCreateModal);
 
+// Rendered
+
 function createGalleryItemsMarkup(items) {
   return items.map(({ preview, original, description }) => {
     return `<div class="gallery__item">
@@ -53,6 +55,8 @@ function createGalleryItemsMarkup(items) {
 </div>`
   }).join('');
 }
+
+// Modal
 
 function onImgClickCreateModal(event) {
   event.preventDefault();
@@ -78,6 +82,8 @@ function onImgClickCreateModal(event) {
     }
   );
   instance.show();
+
+  //  Close by Escape
 
   function onEscKeyPress(event) {
     const ESC_KEY_CODE = 'Escape';

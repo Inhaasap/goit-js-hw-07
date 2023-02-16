@@ -14,6 +14,7 @@
 // Подивися в документації секцію «Options» і додай відображення підписів до зображень з атрибута alt.Нехай підпис буде знизу і з'являється через 250 мілісекунд після відкриття зображення.
 
 import { galleryItems } from './gallery-items.js';
+
 // Change code below this line
 
 const galleryContainer = document.querySelector('.gallery');
@@ -35,6 +36,8 @@ function createGalleryItemsMarkup(items) {
 }
 
 const lightbox = new SimpleLightbox('.gallery a', {
-  captionsData: 'alt', captionPosition: 'bottom', captionDelay: 250
+  captionsData: 'alt',
+  captionPosition: 'bottom',
+  captionDelay: 250
 });
 
